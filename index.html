@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntrix - Premium Development Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85' fill='url(%23g)' font-family='Inter' font-weight='800'>S</text><defs><linearGradient id='g' x1='0%%' y1='0%%' x2='100%%' y2='100%%'><stop offset='0%%' stop-color='%233b82f6'/><stop offset='50%%' stop-color='%236366f1'/><stop offset='100%%' stop-color='%238b5cf6'/></linearGradient></defs></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+    <div class="bg-glow"></div>
+    
+    <!-- CONFIG VARIABLES - EASY TO CHANGE -->
+    <script>
+        window.SYNTTRIX_CONFIG = {
+            stats: {
+                projectsDelivered: 1,
+                uptime: 99.9,
+                responseHours: 24,
+                totalProjects: 3,
+                hoursCoded: 45,
+                happyClients: 1
+            },
+            contact: {
+                email: "renarakawa041009@gmail.com",
+                timezone: "GMT+5:30",
+                responseTime: "24h",
+                deliveryTime: "2 weeks"
+            }
+        };
+    </script>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg viewBox="0 0 160 40" class="logo-icon">
+                    <defs>
+                        <linearGradient id="logo-g" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="rgba(59,130,246,0.9)"/>
+                            <stop offset="50%" stop-color="rgba(99,102,241,0.85)"/>
+                            <stop offset="100%" stop-color="rgba(139,92,246,0.8)"/>
+                        </linearGradient>
+                    </defs>
+                    <text x="0" y="32" font-size="32" font-weight="800" font-family="Inter, sans-serif" fill="url(#logo-g)">S</text>
+                    <text x="45" y="30" font-size="22" font-weight="600" font-family="Inter, sans-serif" fill="var(--text)">yntrix</text>
+                </svg>
+            </div>
+            <div class="nav-controls">
+                <a href="#home" class="nav-btn active" data-scroll="#home">Home</a>
+                <a href="#services" class="nav-btn" data-scroll="#services">Services</a>
+                <a href="#portfolio" class="nav-btn" data-scroll="#portfolio">Portfolio</a>
+                <a href="#recent" class="nav-btn" data-scroll="#recent">Recent Works</a>
+                <a href="#about" class="nav-btn" data-scroll="#about">About</a>
+                <a href="#contact" class="nav-btn" data-scroll="#contact">Contact</a>
+                
+                <!-- ✅ YOUR EXACT THEME TOGGLE BUTTON -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="127">0</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="99.9">99.9</span>
+                            <span class="stat-label">% Uptime</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="24">24</span>
+                            <span class="stat-label">Hour Response</span>
+                        </div>
+                    </div>
+                    <h1>Premium Development Studio</h1>
+                    <p>Scalable Discord bots • Modern web applications • Production automation • API integrations built for growth & performance.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" data-scroll="#contact">Start Project</a>
+                        <a href="#services" class="btn btn-secondary" data-scroll="#services">View Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-intro">
+                    <p>Full-stack development specializing in Discord ecosystems, modern web applications, and enterprise automation.</p>
+                </div>
+                <div class="grid services-grid">
+                    <div class="card service-card fade-in">
+                        <div class="card-icon">🤖</div>
+                        <h3>Discord Bot Development</h3>
+                        <p>Production-ready Discord bots with slash commands, MongoDB/PostgreSQL integration, advanced moderation, analytics dashboards, and custom workflows.</p>
+                        <span class="service-tag">Starting at $5</span>
+                    </div>
+                    <div class="card service-card fade-in">
+                        <div class="card-icon">💻</div>
+                        <h3>Web Applications</h3>
+                        <p>Next.js/React applications with Tailwind CSS, TypeScript, server-side rendering, API routes, and pixel-perfect responsive design.</p>
+                        <span class="service-tag">Starting at $10</span>
+                    </div>
+                    <div class="card service-card fade-in">
+                        <div class="card-icon">⚙️</div>
+                        <h3>Automation Systems</h3>
+                        <p>Python automation for Discord servers, web scraping, scheduled tasks, webhook integrations, and business process optimization.</p>
+                        <span class="service-tag">Starting at $10</span>
+                    </div>
+                    <div class="card service-card fade-in">
+                        <div class="card-icon">🔗</div>
+                        <h3>API Integrations</h3>
+                        <p>Seamless Stripe, Discord API, database connections, webhook systems, OAuth flows, and third-party service integrations.</p>
+                        <span class="service-tag">Starting at $50</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent" class="section recent-works">
+            <div class="container">
+                <h2>Recent Works</h2>
+                <p class="section-subtitle">Latest production deployments showcasing real-world impact</p>
+                <div class="grid portfolio-grid">
+                    <div class="portfolio-card detailed recent-discord fade-in">
+                        <div class="portfolio-header">
+                            <h3>Enterprise Discord Bot - ApexGuard</h3>
+                            <div class="portfolio-meta">
+                                <span class="tag">Discord Bot</span>
+                                <span class="date">Mar 2024</span>
+                                <span class="status live">Live</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-image"></div>
+                        <div class="portfolio-desc">
+                            <p>Complete moderation suite with AI content filtering, real-time analytics dashboard, 10k+ user scale, MongoDB backend, slash command framework.</p>
+                            <div class="portfolio-tech">
+                                <span>Python 3.11</span>
+                                <span>Discord.py 2.3</span>
+                                <span>MongoDB</span>
+                                <span>Docker</span>
+                            </div>
+                            <div class="portfolio-stats">
+                                <span>15k users</span>
+                                <span>99.8% uptime</span>
+                                <span>42 days live</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card detailed recent-ecommerce fade-in">
+                        <div class="portfolio-header">
+                            <h3>E-commerce Dashboard - SaleForge</h3>
+                            <div class="portfolio-meta">
+                                <span class="tag">Web App</span>
+                                <span class="date">Feb 2024</span>
+                                <span class="status live">Live</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-image"></div>
+                        <div class="portfolio-desc">
+                            <p>Real-time analytics dashboard with Stripe payments, PostgreSQL, server-side rendering, mobile responsive, custom admin panel with charts.</p>
+                            <div class="portfolio-tech">
+                                <span>Next.js 14</span>
+                                <span>Stripe API</span>
+                                <span>PostgreSQL</span>
+                                <span>TailwindCSS</span>
+                                <span>Chart.js</span>
+                            </div>
+                            <div class="portfolio-stats">
+                                <span>$247k processed</span>
+                                <span>1.2k orders</span>
+                                <span>28 days live</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card detailed recent-automation fade-in">
+                        <div class="portfolio-header">
+                            <h3>Server Automation - ChronoSync</h3>
+                            <div class="portfolio-meta">
+                                <span class="tag">Automation</span>
+                                <span class="date">Jan 2024</span>
+                                <span class="status live">Live</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-image"></div>
+                        <div class="portfolio-desc">
+                            <p>Complete Discord server management with scheduled content, role automation, webhook integrations, 50+ server deployment, Redis caching.</p>
+                            <div class="portfolio-tech">
+                                <span>Python 3.11</span>
+                                <span>APScheduler</span>
+                                <span>Docker Compose</span>
+                                <span>Redis</span>
+                            </div>
+                            <div class="portfolio-stats">
+                                <span>52 servers</span>
+                                <span>3.7k tasks/day</span>
+                                <span>90 days live</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <h2>Ren Arakawa</h2>
+                        <p>Full-stack Python developer based in India. 3+ years specializing in Discord bot ecosystems, production web applications, and scalable automation systems.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <span class="feature-icon">📍</span>
+                                <span>India (GMT+5:30)</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⏱️</span>
+                                <span>24h response time</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">💻</span>
+                                <span>Python • Discord.py • Next.js</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⭐</span>
+                                <span>5.0 rating (35+ projects)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats fade-in">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="127">0</div>
+                            <div class="stat-label">Total Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="450">450+</div>
+                            <div class="stat-label">Hours Coded</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="35">35+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <p class="section-subtitle">Selected projects showcasing production-grade development</p>
+                <div class="grid portfolio-grid">
+                    <div class="portfolio-card fade-in">
+                        <div class="portfolio-header">
+                            <h3>Enterprise Discord Bot</h3>
+                            <div class="portfolio-meta">
+                                <span class="tag">Discord Bot</span>
+                                <span class="date">Mar 2024</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-image"></div>
+                        <div class="portfolio-desc">
+                            <p>Complete moderation suite with AI content filtering, analytics dashboard, 10k+ user scale, MongoDB backend.</p>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>Discord.py</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card fade-in">
+                        <div class="portfolio-header">
+                            <h3>E-commerce Dashboard</h3>
+                            <div class="portfolio-meta">
+                                <span class="tag">Web App</span>
+                                <span class="date">Feb 2024</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-image"></div>
+                        <div class="portfolio-desc">
+                            <p>Real-time analytics dashboard with Stripe payments, PostgreSQL, server-side rendering, mobile responsive.</p>
+                            <div class="portfolio-tech">
+                                <span>Next.js</span>
+                                <span>Stripe</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card fade-in">
+                        <div class="portfolio-header">
+                            <h3>Server Automation Suite</h3>
+                            <div class="portfolio-meta">
+                                <span class="tag">Automation</span>
+                                <span class="date">Jan 2024</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-image"></div>
+                        <div class="portfolio-desc">
+                            <p>Complete Discord server management with scheduled content, role automation, webhook integrations.</p>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>Docker</span>
+                                <span>APScheduler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info fade-in">
+                        <h2>Start Your Project</h2>
+                        <p class="contact-email" id="contact-email">renarakawa041009@gmail.com</p>
+                        <div class="contact-features">
+                            <div class="feature"><span>📞</span><span id="response-time">24h response</span></div>
+                            <div class="feature"><span>💰</span>Flexible pricing</div>
+                            <div class="feature"><span>🚀</span><span id="delivery-time">2 week delivery</span></div>
+                        </div>
+                    </div>
+                    <form class="contact-form fade-in" id="contact-form">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <input type="text" name="project" placeholder="Project type (Discord bot, web app, etc)" required>
+                        <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary full">Send Message</button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<div class="logo-container">
+  <img src="e9467d2e-2101-4638-a118-540f977219f6.png" alt="Syntrix Logo Dark" id="logo-dark" class="logo active">
+  <img src="3f735d5b-67df-4e7c-a275-6df39a62d5fd.png" alt="Syntrix Logo Light" id="logo-light" class="logo">
+</div>
